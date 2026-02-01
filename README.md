@@ -1,3 +1,35 @@
+## Quick Start
+
+### One-command launch (backend + frontend)
+
+```bash
+chmod +x scripts/run_all.sh
+./scripts/run_all.sh
+```
+
+Open the frontend at http://localhost:5173 and the backend at http://localhost:5000.
+
+### Manual launch
+
+```bash
+# Backend
+export PYTHONPATH=$PWD
+/home/codespace/.python/current/bin/python -m backend.app
+
+# Frontend (new terminal)
+cd frontend
+npm install
+npm run dev
+```
+
+### Windows (batch)
+
+```bat
+scripts\run_all.bat
+```
+
+---
+
 构建一个基于深度学习（DL）和大语言模型（LLM）的研究工具，可以按以下结构进行设计。以下是一个概要性说明：
 
 ## 主要功能规划
